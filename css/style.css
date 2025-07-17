@@ -13,6 +13,16 @@
      opacity: 1;
  }
 /*** Spinner End ***/
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Container overflow sorunu için */
+.container-fluid {
+    overflow-x: hidden;
+}
 
 .back-to-top {
     position: fixed;
