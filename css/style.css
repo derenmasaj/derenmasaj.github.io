@@ -13,15 +13,19 @@
      opacity: 1;
  }
 /*** Spinner End ***/
-html, body {
+
+/* Mobil kaydırma boşluğu sorunu için - sadece body */
+body {
     overflow-x: hidden;
-    width: 100%;
-    position: relative;
 }
 
-/* Container overflow sorunu için */
-.container-fluid {
-    overflow-x: hidden;
+/* Sticky navbar için özel ayarlar */
+.sticky-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+    position: sticky !important;
+    top: 0;
+    z-index: 1020;
 }
 
 .back-to-top {
@@ -95,11 +99,6 @@ html, body {
 }
 
 /*** Topbar Start ***/
-.sticky-top {
-    transition: 0.5s;
-    background: var(--bs-white);
-}
-
 .topbar {
     padding: 10px 0;
     background: var(--bs-secondary) !important;
